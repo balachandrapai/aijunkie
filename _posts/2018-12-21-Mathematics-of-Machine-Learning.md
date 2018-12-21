@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Mathematics of Machine Learning"
