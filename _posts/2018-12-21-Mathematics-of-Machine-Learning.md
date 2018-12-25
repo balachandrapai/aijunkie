@@ -25,7 +25,7 @@ plt.scatter(x,y)
 plt.plot(x,y)
 plt.show()
 ```
-<img src="{{ "/pictures/linear.png" | prepend: site.baseurl }}" align="left" width="100%" height="100%"/>
+<img src="{{ "/pictures/linear.png" | prepend: site.baseurl }}" align="left" width="50%" height="50%"/>
 
 **Linear regression** is a statistical inference technique used to study the relationship between two variables x and y. Variable x is regarded as an independent variable. The other variable y is regarded as the dependent variable. The way we can represent linear regression is by using the equation $y = mx + c$.<br/>
 * y is the prediction.
@@ -33,15 +33,26 @@ plt.show()
 * c is the point where the line intercepts the y axis.
 * m is the slope of the line.<br/>
 We try to learn the value of m and c such that when a line is drawn using these values will be the best fit for our dataset. An error function is used to measure how good the predicted values are. **Least square error** function shown below is one such statistical loss function.<br/>
-$$\sum_{i=1}^n (Y_{t} - \hat Y_{t})^2$$
+$\sum_{i=1}^n (Y_{t} - \hat Y_{t})^2$
 * $Y_{t}$ - is the actual value.
 * $\hat Y_{t}$ - is the predicted value. <br/>
 
 Below is the graph of x,y (with different possible values of m and c) and z (potential error values for every combination of m and c). The bottom of the bowl is the ideal value of m and c for which error value is the least. That is the line of best fit.
 This is computed using calculus - The study of change.<br/>
 
-<img src="{{ "/pictures/gradient-descent.jpg" | prepend: site.baseurl }}" align="left" width="50%" height="50%"/>
+<img src="{{ "/pictures/gradient-descent.jpg" | prepend: site.baseurl }}" align="left" width="50%" height="50%"/><br/>
 
+If there multiple variable to consider then it is a **multivariate regression**. **Linear algebra** is the branch of math that deals with study of multi variate spaces and the linear transformation between them.<br/>
+$Y_{t} = a_{1}+b_{2}X_{2t}+b_{3}X_{3t}+e_{t}$
+* $Y_{t}$ - dependent variable.
+* $a_{1}$ - intercept.
+* $b_{2}$, $b_{3}$ - constant (partial regression coefficient).
+* $X_{2}$, $X_{3}$ - explanatory variable.
+* $e_{t}$ - error term.<br/>
+
+Probability is the measure of likelihood of an outcome. **Logistic regression** is one such probablistic technique. Contrary to linear model where the value is predicted, logistic regression is used to predict the probability of an occurence. Since the probability ranges between 0 and 100, a sigmoid function is employed.<br/> 
+
+An example for linear fitting.<br/>
 ```python
 import keras
 from keras.models import Sequential
