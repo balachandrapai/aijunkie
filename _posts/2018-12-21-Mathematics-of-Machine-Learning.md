@@ -26,7 +26,8 @@ plt.plot(x,y)
 plt.show()
 ```
 <img src="{{ "/pictures/linear.png" | prepend: site.baseurl }}" align="left" width="50%" height="50%"/>
-
+<br/>
+<br/>
 **Linear regression** is a statistical inference technique used to study the relationship between two variables x and y. Variable x is regarded as an independent variable. The other variable y is regarded as the dependent variable. The way we can represent linear regression is by using the equation $y = mx + c$.<br/>
 * y is the prediction.
 * x is the input.
@@ -40,8 +41,9 @@ $\sum_{i=1}^n (Y_{t} - \hat Y_{t})^2$
 Below is the graph of x,y (with different possible values of m and c) and z (potential error values for every combination of m and c). The bottom of the bowl is the ideal value of m and c for which error value is the least. That is the line of best fit.
 This is computed using calculus - The study of change.<br/>
 
-<img src="{{ "/pictures/gradient-descent.jpg" | prepend: site.baseurl }}" align="left" width="50%" height="50%"/><br/>
-
+<img src="{{ "/pictures/gradient-descent.jpg" | prepend: site.baseurl }}" align="left" width="50%" height="50%"/>
+<br/>
+<br/>
 If there multiple variable to consider then it is a **multivariate regression**. **Linear algebra** is the branch of math that deals with study of multi variate spaces and the linear transformation between them.<br/>
 $Y_{t} = a_{1}+b_{2}X_{2t}+b_{3}X_{3t}+e_{t}$
 * $Y_{t}$ - dependent variable.
