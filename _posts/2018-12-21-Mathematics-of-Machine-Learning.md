@@ -12,7 +12,7 @@ Machine learning is all about creating an algorithm that can learn from the data
 * Probability helps predict the likelihood of an event occuring.
 
 In mathematics, the field of statistics contains a collection of techniques that extract useful information from data. It's a tool to create an understanding from the set of numbers. Statistical inference is a process of making a prediction about a larger population of data based on a smaller sample.<br/>
-Consider the following points x and y where the relationship between them is a straight line $ y = mx + c $.<br/>
+Consider the following points x and y where the relationship between them is a straight line $y = mx + c$.<br/>
 
 ```python
 import numpy as np
@@ -27,20 +27,20 @@ plt.show()
 ```
 <img src="{{ "/pictures/linear.png" | prepend: site.baseurl }}" align="left" width="100%" height="100%"/>
 
-**Linear regression** is a statistical inference technique used to study the relationship between two variables x and y. Variable x is regarded as an independent variable. The other variable y is regarded as the dependent variable. The way we can represent linear regression is by using the equation $ y = mx + c $.<br/>
+**Linear regression** is a statistical inference technique used to study the relationship between two variables x and y. Variable x is regarded as an independent variable. The other variable y is regarded as the dependent variable. The way we can represent linear regression is by using the equation $y = mx + c$.<br/>
 * y is the prediction.
 * x is the input.
 * c is the point where the line intercepts the y axis.
 * m is the slope of the line.<br/>
 We try to learn the value of m and c such that when a line is drawn using these values will be the best fit for our dataset. An error function is used to measure how good the predicted values are. **Least square error** function shown below is one such statistical loss function.<br/>
-$ \sum_{i=1}^n (Y_{t} - \hat Y_{t})^2  $
-* $ Y_{t} $ - is the actual value.
-* $ \hat Y_{t} $ - is the predicted value. <br/>
+$\sum_{i=1}^n (Y_{t} - \hat Y_{t})^2 $
+* $Y_{t}$ - is the actual value.
+* $\hat Y_{t}$ - is the predicted value. <br/>
 
 Below is the graph of x,y (with different possible values of m and c) and z (potential error values for every combination of m and c). The bottom of the bowl is the ideal value of m and c for which error value is the least. That is the line of best fit.
 This is computed using calculus - The study of change.<br/>
 
-<img src="{{ "/pictures/gradient-descent.jpg" | prepend: site.baseurl }}" align="left" width="100%" height="100%"/>
+<img src="{{ "/pictures/gradient-descent.jpg" | prepend: site.baseurl }}" align="left" width="50%" height="50%"/>
 
 ```python
 import keras
