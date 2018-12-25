@@ -33,7 +33,7 @@ plt.show()
 * c is the point where the line intercepts the y axis.
 * m is the slope of the line.<br/>
 We try to learn the value of m and c such that when a line is drawn using these values will be the best fit for our dataset. An error function is used to measure how good the predicted values are. **Least square error** function shown below is one such statistical loss function.<br/>
-$\sum_{i=1}^n (Y_{t} - \hat Y_{t})^2 $
+$$\sum_{i=1}^n (Y_{t} - \hat Y_{t})^2$$
 * $Y_{t}$ - is the actual value.
 * $\hat Y_{t}$ - is the predicted value. <br/>
 
